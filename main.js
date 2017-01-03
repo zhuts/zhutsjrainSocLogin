@@ -1,8 +1,19 @@
+var underscore = angular.module('underscore', []);
+underscore.factory('_', ['$window', function($window) {
+  return $window._; // assumes underscore has already been loaded on the page
+}]);
+
 angular.module('app', ['ngMaterial', 'ngMessages', 'material.svgAssetsCache', 'underscore'])
 
 .controller('MainController', function($scope){
+  $scope.profile = null;
 
-}
+  var setProfile = function(obj){
+    $scope.profile=obj;
+  }
+
+
+})
 
 // This is the function that will welcome endusers to our site! For
 // demonstration purposes, we'll also print out the full profile.
@@ -10,9 +21,10 @@ function welcomeUser(profile) {
   var messageContainer = document.getElementById('messageContainer');
   var profileContainer = document.getElementById('profileContainer');
   var name = profile.displayName;
-  messageContainer.innerHTML = '<h2>Welcome, ' + name + '!</h2>';
+  var providerName = profile.providerName;
+  messageContainer.innerHTML = '<h2><span>You are now signed in with ' + providerName + ',<span class="spacer"></span><br /><span class="spacer"></span>' + name + '!</span></h2>';
   prettyPrintedProfile = JSON.stringify(profile, null, 2);
-  profileContainer.innerHTML = prettyPrintedProfile;
+  // profileContainer.innerHTML = prettyPrintedProfile;
 }
 
 // janrainWidgetOnLoad is a special function that gets called as soon as the the

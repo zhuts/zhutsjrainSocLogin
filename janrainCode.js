@@ -16,7 +16,7 @@
   janrain.settings.showAttribution = true;
   janrain.settings.fontColor = '#333333';
   janrain.settings.fontFamily = 'Helvetica,Lucida Grande,Verdana,sans-serif';
-  janrain.settings.backgroundColor = '#abcdd6';
+  janrain.settings.backgroundColor = '#dce5e8';
   janrain.settings.width = '370';
   janrain.settings.borderColor = '#CCCCCC';
   janrain.settings.borderRadius = '4';    janrain.settings.buttonBorderColor = '#CCCCCC';
