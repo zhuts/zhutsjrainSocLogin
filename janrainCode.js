@@ -6,6 +6,24 @@
   // This is where you can add/modify Janrain Widget settings.
   janrain.settings.tokenUrl = 'http://localhost:3000';
   janrain.settings.tokenAction = 'event';
+  janrain.settings.type = 'embed';
+  janrain.settings.appId = 'aanpeangjhlcfaadamka';
+  janrain.settings.appUrl = 'https://zhutsjrainsoclogin.rpxnow.com';
+  janrain.settings.providers = ["facebook","googleplus"];
+  janrain.settings.providersPerPage = '2';
+  janrain.settings.format = 'one column';
+  janrain.settings.actionText = 'Sign in with';
+  janrain.settings.showAttribution = true;
+  janrain.settings.fontColor = '#333333';
+  janrain.settings.fontFamily = 'Helvetica,Lucida Grande,Verdana,sans-serif';
+  janrain.settings.backgroundColor = '#abcdd6';
+  janrain.settings.width = '370';
+  janrain.settings.borderColor = '#CCCCCC';
+  janrain.settings.borderRadius = '4';    janrain.settings.buttonBorderColor = '#CCCCCC';
+  janrain.settings.buttonBorderRadius = '5';
+  janrain.settings.buttonBackgroundStyle = 'gradient';
+  janrain.settings.language = '';
+  janrain.settings.linkClass = 'janrainEngage';
   // Only edit above this line.
 
   function isReady() { janrain.ready = true; };

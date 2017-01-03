@@ -1,0 +1,36 @@
+
+.loginBackground {
+  width: 100%;
+  height: 100vh;
+  background: url(./rain.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: repeat-y;
+  animation: animatedBackground 50s linear infinite;
+}
+
+.name-input {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  height: 90%;
+}
+
+.name-input-container {
+  height: 100%;
+  background-color: white;
+}
+
+.title {
+  padding-right: 20px;
+}
+
+#signInView {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
